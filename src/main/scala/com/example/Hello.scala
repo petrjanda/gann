@@ -39,7 +39,7 @@ object Hello {
       println("Average error: " + totalError / samples)
       println(network)
 
-      generation = generation.next(.3, .0)
+      generation = generation.next(0.001, 0.001)
     })
   }
 }
